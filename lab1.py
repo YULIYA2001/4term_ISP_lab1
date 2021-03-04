@@ -1,10 +1,11 @@
 print("Good  morning!\n")
 print("---- Simple Calculator ----")
-while True:
+op = ''
+while op != 'q':
     print("Print q to exit")
     op = input("Operation (+ - * /): ")
     if op == 'q':
-        break;
+        continue
     if op in ('+', '-', '*', '/'):
         try:
             x = float(input("x = "))
